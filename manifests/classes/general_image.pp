@@ -14,7 +14,7 @@ class general_image {
 
 	# Package Calls
 	# package{"$facter": 
-	# 	source => "$pkg_base/$facter",
+	# 	source 	=> "$pkg_base/$facter",
 	# 	require => Package[$puppetcurrent],
 	# 	}
 	# package{"$firstclass": source => "$pkg_base/$firstclass",}
@@ -23,12 +23,12 @@ class general_image {
 	# 	before => Package[$facter],
 	# 	}
 	# package{"$textwrangler": 
-	# 	source => "$pkg_base/$textwrangler",
-	# 	provider => appdmg,
+	# 	source 		=> "$pkg_base/$textwrangler",
+	# 	provider 	=> appdmg,
 	# 	}
 	# package{"$firefox": 
-	# 	source => "$pkg_base/$firefox",
-	# 	provider => appdmg,
+	# 	source 		=> "$pkg_base/$firefox",
+	# 	provider 	=> appdmg,
 	# 	}
 
 	package{"$firstclass": source => "http://127.0.0.1/packages/$firstclass",}rm 

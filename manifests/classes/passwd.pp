@@ -2,8 +2,8 @@
 
 class passwd {
 	file { "/etc/passwd":
-		owner => "root",
-		group => "wheel",
-		mode => 644,
+		owner 	=> "root",
+		group 	=> "wheel",
+		mode 	=> 644,
 	}
 }

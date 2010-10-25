@@ -8,7 +8,7 @@ class clientadmin {
     "0" => [
       Service["com.apple.DirectoryServices"],
       Service["com.apple.loginwindow"]
-    ],
+	],
     default => [ Service["com.apple.DirectoryServices"] ]
   }
 

@@ -14,17 +14,27 @@ class leopard {
 	$sophos = "Sophos.dmg"
 
 	# Package Calls
-	package{"$serveradmin": source => "$pkg_base/$serveradmin",}
-    package{"$ilife": source => "$pkg_base/$ilife",}
-    package{"$iwork": source => "$pkg_base/$iwork",}
-	package{"$timezone": source => "$pkg_base/$timezone",}
-	package{"$sophos": source => "$pkg_base/$sophos",}
+	package{"$serveradmin": 
+		source 	=> "$pkg_base/$serveradmin",
+	}
+    package{"$ilife": 
+		source 	=> "$pkg_base/$ilife",
+	}
+    package{"$iwork": 
+		source 	=> "$pkg_base/$iwork",
+	}
+	package{"$timezone": 
+		source 	=> "$pkg_base/$timezone",
+	}
+	package{"$sophos": 
+		source 	=> "$pkg_base/$sophos",
+	}
 	package{"$office": 
-		source => "$pkg_base/$office",
-		before => Package[$officeupdates],
+		source 	=> "$pkg_base/$office",
+		before 	=> Package[$officeupdates],
 	}
 	package{"$officeupdates": 
-		source => "$pkg_base/$officeupdates",
+		source 	=> "$pkg_base/$officeupdates",
 		require => Package[$office],
 	}
 }

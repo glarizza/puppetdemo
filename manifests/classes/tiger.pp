@@ -14,8 +14,12 @@ class tiger {
 	#Package{ensure => installed,provider => pkgdmg}
 
 	# Package Calls
-	package{"$ilife": source => "$pkg_base/$ilife",}
-	package{"$safari": source => "$pkg_base/$safari",}
+	package{"$ilife": 
+		source 	=> "$pkg_base/$ilife",
+	}
+	package{"$safari": 
+		source 	=> "$pkg_base/$safari",
+	}
 	package{"$office": 
 		source 	=> "$pkg_base/$office",
 		before 	=> Package[$officeupdates],

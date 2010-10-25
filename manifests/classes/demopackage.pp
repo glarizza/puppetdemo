@@ -16,12 +16,12 @@ class demopackage {
 	
 	# Package Call
 	package { "$GEarth":
-		source => "http://127.0.0.1/packages/$GEarth",
+		source 	=> "http://127.0.0.1/packages/$GEarth",
 	}
 	
 	package { "$firefox":
-		provider => appdmg,
-		source => "http://127.0.0.1/packages/$firefox",
+		provider	=> appdmg,
+		source 		=> "http://127.0.0.1/packages/$firefox",
 	}
 
 	# package { "$Office":
@@ -30,13 +30,13 @@ class demopackage {
 	# }
 	# 
 	# package { "$OfficeU1":
-	# 	source => "http://127.0.0.1/packages/$OfficeU1",
+	# 	source 	=> "http://127.0.0.1/packages/$OfficeU1",
 	# 	require => Package[$Office],
-	# 	before => Package[$OfficeU2],
+	# 	before 	=> Package[$OfficeU2],
 	# }
 	# 	
 	# package { "$OfficeU2":
-	# 	source => "http://127.0.0.1/packages/$OfficeU2",
+	# 	source 	=> "http://127.0.0.1/packages/$OfficeU2",
 	# 	require => Package[$OfficeU1],
 	# }	
 }

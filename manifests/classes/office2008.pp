@@ -17,7 +17,7 @@ class office2008 {
 
 	# Package Calls
 	package{"$office": 
-		source => "$pkg_base/$office",
+		source 	=> "$pkg_base/$office",
 	}
 	package{"$update1220":
     	source 	=> "$pkg_base/$update1220",
