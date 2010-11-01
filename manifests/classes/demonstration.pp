@@ -3,7 +3,7 @@
 #
 class demostuff {
 	
-#	include puppetusers
+	include puppetusers
 #	include demofile
 #	include demopackage
 #	include mcx

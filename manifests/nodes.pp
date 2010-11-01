@@ -1,8 +1,7 @@
 # /etc/puppet/manifests/nodes.pp
 
-node 'demomini.huronhs.com' {
-	include demouser
-	include passenger
+node 'democlient.huronhs.com' {
+	include demostuff
 }
 node default {
 	include general_image
