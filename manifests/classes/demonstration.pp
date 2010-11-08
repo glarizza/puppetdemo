@@ -3,11 +3,12 @@
 #
 class demostuff {
 	
-	include puppetusers
+#	include puppetusers
 #	include demofile
 #	include demopackage
 #	include mcx
-#	include demouser
+#	include demoprinter
+#	include	demoauthorization
 
 	
 } # End of Class
