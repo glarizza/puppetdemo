@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>com.apple.loginwindow</key>
+<dict>
+  <key>AdminHostInfo</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <string>HostName</string>
+  </dict>
+  <key>HideAdminUsers</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <false/>
+  </dict>
+  <key>HideLocalUsers</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <false/>
+  </dict>
+  <key>HideMobileAccounts</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <false/>
+  </dict>
+  <key>IncludeNetworkUser</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <false/>
+  </dict>
+  <key>LoginwindowText</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <string>This computer is property of Puppet Labs Inc.  If lost, please contact gary@puppetlabs.com</string>
+  </dict>
+  <key>RestartDisabled</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <false/>
+  </dict>
+  <key>SHOWFULLNAME</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <true/>
+  </dict>
+  <key>SHOWOTHERUSERS_MANAGED</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <true/>
+  </dict>
+  <key>ShutDownDisabled</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <false/>
+  </dict>
+  <key>mcx_UseLoginWindowText</key>
+  <dict>
+    <key>state</key>
+    <string>always</string>
+    <key>value</key>
+    <true/>
+  </dict>
+</dict>
+</dict>
+</plist>

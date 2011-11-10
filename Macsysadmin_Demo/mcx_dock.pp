@@ -1,0 +1,117 @@
+mcx { '/Users/gary':
+  ensure  => 'present',
+  content => '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>com.apple.dock</key>
+  <dict>
+    <key>autohide</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <false/>
+    </dict>
+    <key>autohide-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>largesize</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <real>128</real>
+    </dict>
+    <key>launchanim</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>launchanim-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>magnification</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <false/>
+    </dict>
+    <key>magnify-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>magsize-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>mineffect</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <string>genie</string>
+    </dict>
+    <key>mineffect-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>orientation</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <string>left</string>
+    </dict>
+    <key>position-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>size-immutable</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <true/>
+    </dict>
+    <key>tilesize</key>
+    <dict>
+      <key>state</key>
+      <string>always</string>
+      <key>value</key>
+      <real>64</real>
+    </dict>
+  </dict>
+</dict>
+</plist>
+',
+notify => Exec['killall Dock'],
+}
+
+exec { 'killall Dock':
+  path        => '/usr/bin',
+  refreshonly => true,
+}
